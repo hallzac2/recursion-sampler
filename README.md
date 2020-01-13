@@ -1,1 +1,1 @@
-# recursive-sampler
+# recursion-sampler
