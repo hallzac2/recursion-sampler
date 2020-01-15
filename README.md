@@ -3,11 +3,11 @@
 * Update package JSON to correct license and add author
 * Set up TypeScript
 * Set up Jest tests
-* Implement Trampoline
+* Test Trampoline Function
 * Implement Memoization
 * Implement Recursion
   * Fibonnaci
-  * Factorial
   * Reverse String
   * Sum up to N
   * TODO determine more!!!
+  
