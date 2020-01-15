@@ -4,6 +4,7 @@
 * Set up TypeScript
 * Set up Jest tests
 * Test Trampoline Function
+* Show setTimeout & setInterval version of trampoline
 * Implement Memoization
 * Implement Recursion
   * Fibonnaci
