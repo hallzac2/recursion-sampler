@@ -7,14 +7,16 @@
 export function memoize<T>(fn: (...args: any[]) => T): (...args: any[]) => T {
   const memoStore: { [key:string]: T; } = {};
 
-  return function() {
+  // See https://www.typescriptlang.org/docs/handbook/functions.html#this-parameters for info on typing Javascript's this
+  // memoize can't return an arrow function because that would not work as a property on an object. This is due to how this gets set for arrow functions.
+  return function(this: any) {
     const args = Array.prototype.slice.call(arguments);
     const key = args.map((arg) => {
       return (arg instanceof Object) ? JSON.stringify(arg) : arg
     }).toString();
 
     if (!(key in memoStore)) {
-      const result = fn(args);
+      const result = fn.apply(this, args);
       memoStore[key] = result;
     }
 
