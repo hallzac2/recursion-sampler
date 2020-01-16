@@ -1,7 +1,7 @@
 {
   "name": "recursion-sampler",
   "version": "1.0.0",
-  "description": "A package demonstrating recursion and trampolines.",
+  "description": "A package demonstrating recursion, memoization, and trampolines.",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [

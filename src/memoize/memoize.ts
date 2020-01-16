@@ -2,7 +2,7 @@
  * Memoizes the given function
  * 
  * @param fn The function to memoize, it should be a pure function
- * @return A new function that is a memoized version of the given function
+ * @returns A new function that is a memoized version of the given function
  */
 export function memoize<T>(fn: (...args: any[]) => T): (...args: any[]) => T {
   const memoStore: { [key:string]: T; } = {};
