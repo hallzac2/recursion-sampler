@@ -1,24 +1,6 @@
 import { trampoline } from "./trampoline";
 
 /**
- * Gets the max stack size of the environment
- * @returns The max stack size of the environment that this is executed in
- */
-function getMaxStackSize(): number {
-  let stackSize = 0;
-  try {
-    function increment() {
-      stackSize++;
-      increment();
-    }
-    increment();
-  } catch(e) {
-    stackSize++;
-  }
-  return stackSize;
-}
-
-/**
  * Counts to the given number recursively
  * 
  * @param num The number to count to
@@ -42,7 +24,7 @@ describe('trampoline', () => {
   it('should not cause a StackOverflow error', () => {
     const incrementToN = trampoline(incrementToNImpl);
 
-    const expected = getMaxStackSize();
+    const expected = 50_000;
     const actual = incrementToN(expected);
     
     expect(actual).toBe(expected);
