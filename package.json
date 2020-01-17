@@ -26,8 +26,11 @@
     "type": "git",
     "url": "git+https://github.com/hallzac2/recursive-sampler.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Zackary Hall",
+    "email": "hallzac2@isu.edu"
+  },
+  "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/hallzac2/recursive-sampler/issues"
   },
