@@ -4,6 +4,7 @@ This is a small repo showing a few recursive algorithms and how applying a tramp
 * Memoize
 * Factorial
 * Reverse String
+
 As well as tests for each function.
 
 ## Running the tests
