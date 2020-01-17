@@ -1,5 +1,5 @@
 # recursion-sampler
-This is a small repo showing a few recursive algoritms and how applying a trampoline can make it so that they will never cause a Stack Overflow Error. This repo includes implementations for:
+This is a small repo showing a few recursive algorithms and how applying a trampoline can make it so that they will never cause a Stack Overflow Error. This repo includes implementations for:
 * Trampoline
 * Memoize
 * Factorial
