@@ -50,7 +50,7 @@ describe('trampoline', () => {
     };
 
     const expected = 10;
-    const actual = incrementer.incrementToN(10);
+    const actual = incrementer.incrementToTen();
 
     expect(actual).toBe(expected);
   });
